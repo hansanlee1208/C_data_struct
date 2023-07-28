@@ -1,21 +1,8 @@
 #include <stdio.h>
 
-typedef struct _score
-{
-    int scoreKOR;
-    int scoreMAT;
-    int scoreENG;
-    int scoreSCI;
-
-};
-
 
 
 int main(void){
-    struct score a;
-    struct score *p;
-    p = &a;
-    p->scoreENG = 100;
     
     for(int i = 5; i<7; i++)
     {
