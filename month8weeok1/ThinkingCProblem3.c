@@ -10,9 +10,9 @@ int main(){
     int multi_15=0;
 
     for(int i = 1; i<= 1000; i++){
-        if(i%3 ==0)multi_3 += i;
-        if(i%5 == 0) multi_5 += i;
-        if( i%15 == 0)multi_15 +=i;
+        // if(i%3 ==0)multi_3 += i;
+        // if(i%5 == 0) multi_5 += i;
+        // if( i%15 == 0)multi_15 +=i;
         
         
         if((i % 3 == 0) ||(i%5 == 0)){ 

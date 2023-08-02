@@ -1,16 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int a, b, c=0;
-    int cnt =0;
-    //서로 다른 수 3개가 더해서 2000이 되는경우 
-    // 1997 2 1  ~ 668 667 665 (작은 수 범위 정하기 vs 큰 수 범위 정하기)
-    for(a=1; a<666; a++){ //a는 가장 작은 수 1~665까지의 경우가 있다.
-        for(b=a+1; b<=(2000-a)/2; b++){ //b는 두번째 수 c와 a와 같지 않은 경우로 진행
-            c = 2000-a-b; 
-            if(c != b)
-            cnt++;
-        }
+    int N =0;
+    int ans = 1;
+    printf("N을 입력해보세요 1~N까지의 곱을 출력해줄게요. \n");
+    scanf("%d", &N);
+    for(int i=1; i<=N; i++){
+        ans *=i;
     }
-    printf("a+b+c = 2000 && a<b<c를 만족하는 갯수는 %d 이다." , cnt);
+    printf("Answer is : %d" , ans);
 }
